@@ -1,0 +1,100 @@
+/* Nav.css */
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/static/Karla-Regular.ttf') format('truetype');
+    /* Adjust the path and format as needed */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEFEE;
+    padding: 10px;
+
+}
+
+header nav>ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav>ul>li {
+    margin: 0 10px;
+    color: #333333;
+    font-family: "Karla";
+    font-weight: medium;
+}
+
+.hamburger-menu {
+    visibility: hidden;
+    /* Hide hamburger-menu */
+}
+
+/*@media screen and (max-width: 1024px) {}*/
+
+
+
+
+@media screen and (max-width: 659px) {
+
+    header {
+        justify-content: space-between;
+        /* Updated to space-between to separate the logo and hamburger */
+    }
+
+    nav {
+        display: none;
+        /* Hide the regular navigation */
+    }
+
+    .hamburger-menu {
+        visibility: visible;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+
+    nav.open {
+        display: flex;
+        /* Show the navigation when the menu is open */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Adjust as needed */
+        left: 0;
+        right: 0;
+        background-color: #333;
+    }
+
+    nav.open li {
+        margin: 10px;
+    }
+
+    .dropdown-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Single column */
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        /* Adjust as needed */
+        left: 0;
+        right: 0;
+
+    }
+
+    .dropdown-menu li {
+        margin: 10px;
+        color: #fff;
+        /* Adjust text color as needed */
+        font-family: "Karla";
+        font-weight: medium;
+    }
+}

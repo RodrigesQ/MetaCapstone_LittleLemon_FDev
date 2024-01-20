@@ -1,0 +1,23 @@
+/* Footer.css */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #EDEFEE;
+    color:  #333333;
+}
+
+.logo-section {
+    grid-column: span 4;
+    /* Spanning 4 columns */
+}
+
+.navigation-section,
+.contact-section,
+.social-media-section {
+    grid-column: span 2;
+    /* Spanning 2 columns each */
+}
+
+/* Adjust styles as needed */
