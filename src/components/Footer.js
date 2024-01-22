@@ -2,6 +2,7 @@
 import React from 'react'
 import Logo from './assets/Logo.svg'
 import './styles/Footer.css'
+
 import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
@@ -15,12 +16,12 @@ const Footer = () => {
         <figure>
           <figcaption>Navigation</figcaption>
           <ul>
-            <li><NavLink to="#">Home</NavLink></li>
-            <li><NavLink to="#">About</NavLink></li>
-            <li><NavLink to="#">Menu</NavLink></li>
-            <li><NavLink to="#">Reservations</NavLink></li>
-            <li><NavLink to="#">Order online</NavLink></li>
-            <li><NavLink to="#">Login</NavLink></li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/about">About</NavLink></li>
+            <li><NavLink to="/menu">Menu</NavLink></li>
+            <li><NavLink to="/reservations">Reservations</NavLink></li>
+            <li><NavLink to="/order-online">Order Online</NavLink></li>
+            <li><NavLink to="/login">Login</NavLink></li>
           </ul>
         </figure>
       </div>
@@ -38,13 +39,17 @@ const Footer = () => {
 
       <div className="social-media-section">
         <figure>
-          <figcaption>Social media links</figcaption>
+          <figcaption>Social media</figcaption>
           <ul>
             <li>Facebook</li>
             <li>Instagram</li>
             <li>Pinterest</li>
           </ul>
         </figure>
+      </div>
+
+      <div className="copyright">
+        <p>© 2023 Little Lemon Ltd. All rights reserved.</p>
       </div>
     </footer>
   );

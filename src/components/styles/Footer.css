@@ -20,4 +20,8 @@
     /* Spanning 2 columns each */
 }
 
+.copyright {
+    grid-column: span 12;
+    /* Spanning all 12 columns, moving to a new row */
+  }
 /* Adjust styles as needed */
