@@ -1,0 +1,75 @@
+/* NavigationLinks.css */
+
+nav .navigation-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-links li {
+    padding: 10px;
+    text-align: center;
+}
+
+.navigation-section .navigation-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.navigation-section .navigation-links li {
+    text-align: left;
+    padding: 2px;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s, background-color 0.3s;
+    /* Smooth transition for color and background changes */
+    border-radius: 8px;
+    /* Add rounded corners */
+    padding: 5px;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.navigation-section .navigation-links a {
+    text-decoration: none;
+    color: rgb(252, 249, 249);
+    transition: color 0.3s, background-color 0.3s;
+    /* Smooth transition for color and background changes */
+    border-radius: 8px;
+    /* Add rounded corners */
+    padding: 5px;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Change color on hover */
+.navigation-links a:hover {
+    background-color: #4e5558;
+    color: white;
+    background-color: rgba(78, 85, 88, 0.7);
+    /* Light grey with 70% opacity */
+    /* Change to the desired hover color */
+}
+
+/* Change color on hover */
+.navigation-section .navigation-links a:hover {
+    background-color: #4e5558;
+    color: white;
+    background-color: rgba(78, 85, 88, 0.7);
+    /* Light grey with 70% opacity */
+    /* Change to the desired hover color */
+}
+
+/* Change color on click/active */
+.navigation-links a:active {
+    color: #4a90e2;
+    /* Change to the desired active color */
+}

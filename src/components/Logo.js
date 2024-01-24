@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import LogoImage from './assets/Logo.svg';
+import LogoImage from './assets/Logo.svg'
+
 
 const Logo = () => {
   return (
@@ -12,4 +13,6 @@ const Logo = () => {
   );
 }
 
-export default Logo;
+
+
+export default Logo ;

@@ -1,28 +1,20 @@
 // Footer.js
 import React from 'react'
-import Logo from './assets/Logo.svg'
 import './styles/Footer.css'
+import NavigationLinks from './NavigationLinks';
+import Logo1 from './Logo1';
 
-import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <div className="logo-section">
-        <img src={Logo} alt="Little Lemon Logo" />
-      </div>
+      {/* Logo */}
+      <Logo1 />
 
       <div className="navigation-section">
         <figure>
           <figcaption>Navigation</figcaption>
-          <ul>
-            <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/about">About</NavLink></li>
-            <li><NavLink to="/menu">Menu</NavLink></li>
-            <li><NavLink to="/reservations">Reservations</NavLink></li>
-            <li><NavLink to="/order-online">Order Online</NavLink></li>
-            <li><NavLink to="/login">Login</NavLink></li>
-          </ul>
+          <NavigationLinks />
         </figure>
       </div>
 
