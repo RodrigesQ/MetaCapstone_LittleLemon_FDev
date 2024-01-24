@@ -50,10 +50,10 @@ const SpecialsCard = () => {
                             <h3 className="price-tag">{price}</h3>
                         </div>
                         <p>{description}</p>
-                        <NavLink to="/order-online">
+                        <NavLink to="/order-online" className="order-link">
                             <h4>
-                                {order}
-                                {<MdDeliveryDining size={30} style={{ color: "#333333", marginLeft: "10px", }} />}
+                                <span className="order-text">{order}</span>
+                                {<MdDeliveryDining size={30} style={{ color: "#333333", marginLeft: "10px" }} />}
                             </h4>
                         </NavLink>
                     </div>

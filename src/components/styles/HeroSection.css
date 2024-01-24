@@ -2,7 +2,8 @@
 
 @font-face {
     font-family: 'Karla';
-    src: url('../fonts/static/Karla-Regular.ttf') format('truetype'); /* Adjust the path and format as needed */
+    src: url('../fonts/static/Karla-Regular.ttf') format('truetype');
+    /* Adjust the path and format as needed */
 }
 
 /* Custom styles for the header */
@@ -10,7 +11,8 @@
     padding-top: 10vh;
     background-color: #495e57;
     width: 100%;
-    min-height: 350px; /*vai vajag!!!*/
+    min-height: 350px;
+    /*vai vajag!!!*/
 }
 
 .hero-section-container {
@@ -23,7 +25,8 @@
 }
 
 .section-left {
-    grid-column: span 8; /* Takes 8 out of 12 columns on desktop */
+    grid-column: span 8;
+    /* Takes 8 out of 12 columns on desktop */
 }
 
 .section-left h1 {
@@ -42,25 +45,33 @@
     width: 100%;
 }
 
-.btn {
-    padding: 15px 30px;
+
+.btn-container a {
+    padding: 15px 35px;
     font-size: 16pt;
     font-weight: 600;
     background-color: #f4ce14;
     color: #333333;
     border-radius: 20px;
     border: none;
+    font-family: 'Karla';
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
 }
 
-.btn:hover {
+.btn-container a:hover {
     cursor: pointer;
     background-color: #333333;
     color: #f4ce14;
-    transition: 0.3s;
+    text-decoration: none;
 }
 
+
 .section-right {
-    grid-column: span 4; /* Takes 4 out of 12 columns on desktop */
+    grid-column: span 4;
+    /* Takes 4 out of 12 columns on desktop */
     position: relative;
 }
 
@@ -80,15 +91,18 @@
 
 @media screen and (max-width: 1024px) {
     .hero-section-container {
-        grid-template-columns: repeat(12, 1fr); /* Reset columns for tablet */
+        grid-template-columns: repeat(12, 1fr);
+        /* Reset columns for tablet */
     }
 
     .section-left {
-        grid-column: span 12; /* Takes all 12 columns on tablet */
+        grid-column: span 12;
+        /* Takes all 12 columns on tablet */
     }
 
     .section-right {
-        grid-column: span 12; /* Takes all 12 columns on tablet */
+        grid-column: span 12;
+        /* Takes all 12 columns on tablet */
         margin-top: 30px;
         margin-bottom: 0px;
     }
@@ -102,6 +116,7 @@
 
 @media screen and (max-width: 659px) {
     .hero-section-container {
-        grid-template-columns: repeat(4, 1fr); /* Change to 4 columns for mobile */
+        grid-template-columns: repeat(4, 1fr);
+        /* Change to 4 columns for mobile */
     }
 }

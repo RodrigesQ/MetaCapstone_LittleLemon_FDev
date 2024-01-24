@@ -16,6 +16,10 @@ header {
 
 }
 
+.logo img {
+    padding-left: 20px;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -48,7 +52,7 @@ header nav>ul>li {
 
 
 
-@media screen and (max-width: 659px) {
+@media screen and (max-width: 1024px) {
 
     header {
         justify-content: space-between;
@@ -73,9 +77,12 @@ header nav>ul>li {
         top: 60px;
         /* Adjust as needed */
         right: 0;
-        background-color: #b9f039;
-        z-index: 1000; /* Set a high z-index to ensure it appears on top */
+        background-color: #f4ce14;
+        z-index: 1000;
+        /* Set a high z-index to ensure it appears on top */
         border-radius: 10px;
+        font-family: 'Karla';
+        font-weight: bold;
     }
 
     nav.open ul {

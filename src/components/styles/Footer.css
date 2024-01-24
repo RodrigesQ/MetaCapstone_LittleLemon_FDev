@@ -4,8 +4,8 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     padding: 20px;
-    background-color:  #333333;
-    color:  #EDEFEE;
+    background-color: #333333;
+    color: #EDEFEE;
 }
 
 .logo-section {
@@ -21,17 +21,23 @@
     white-space: nowrap;
 }
 
+
+
 .copyright {
     grid-column: span 12;
     /* Spanning all 12 columns, moving to a new row */
-  }
+}
+
 /* Adjust styles as needed */
 
 /* Media query for smaller screens */
 @media screen and (max-width: 1024px) {
+
     .navigation-section,
     .contact-section,
     .social-media-section {
-        grid-column: span 12; /* Stack on top of each other */
+        grid-column: span 12;
+        /* Stack on top of each other */
+
     }
 }

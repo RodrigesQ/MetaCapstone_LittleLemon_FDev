@@ -13,7 +13,11 @@ const HeroSection = () => {
                     <h1>Little lemon</h1>
                     <h2>Chicago</h2>
                     <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-                    <button className="btn"><NavLink to="/reservations">Reserve a Table</NavLink></button>
+                    <div className="btn-container">
+                        <NavLink to="/reservations" className="btn">
+                            Reserve a Table
+                        </NavLink>
+                    </div>
                 </div>
 
                 <div className="section-right">
